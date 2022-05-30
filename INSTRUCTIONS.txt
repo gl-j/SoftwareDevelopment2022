@@ -33,9 +33,8 @@
 sudo apt-get install python3.9
 
 -To install the necessary libraries: 
-*****NOTE: If you want to re-run the data processing and model training you will need all of the libraries,
-otherwise, if you only want to run the app using the previously trained model,
-then you will only need: python3.9, numpy, pickle-mixin, and flask 
+*****NOTE: If you want to re-run the data processing and model training ("LoanPred.ipynb") you will need all of the libraries,
+otherwise, if you only want to run the app using the previously trained model you will only need: python3.9, numpy, pickle-mixin, and flask 
 
 sudo apt install python3-pip
 pip install numpy
@@ -52,7 +51,7 @@ pip install flask
 
 -Download the contents from the "app" folder and the "templates" folder
 
--You can runn the app using flask, or using docker, bellow you can find the steps for each of them
+-You can run the app using flask, or using docker, bellow you can find the steps for each of them
 
 -----Using flask:
 -Inside the app folder from the shell run:
