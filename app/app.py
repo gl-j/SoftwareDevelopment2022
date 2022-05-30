@@ -1,8 +1,5 @@
 
 
-#OJOOOOOOOO Este solo es prueba local sin usar redis, pero para que corra en flask tiene que tener el nombre de "app.py"
-
-
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
