@@ -1,0 +1,11 @@
+Gender=[Male=1, Female=0]
+Married=[Yes=1, No=0]
+Dependents=[0=0, 1=1, 2=2, 3+=3]
+Education=[Graduate=0, Not Graduate=1]
+Self_Employed=[No=0, Yes=1]
+Credit_History=Takes values from 0.0 to 1.0
+Property_Area=[Rural=0, Semiurban=1, Urban=2]
+ApplicantIncomeLog = np.log(ApplicantIncomeLog + 1)
+LoanAmountLog = np.log(LoanAmountLog + 1)
+LoanAmountTermLog = np.log(LoanAmountTermLog + 1)
+
