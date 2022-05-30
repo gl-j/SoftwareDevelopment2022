@@ -1,0 +1,74 @@
+****** About the contents of the folders:
+
+-from "app" folder
+"app.py" - the main python script
+
+"LoanPred.ipynb" - is a jupyter notebook containing the code that was used to process the data and 
+train and select the best model
+
+"Reverse encode.txt" - is a file containing a description of the encoding of the values that take each attribute from the dataset 
+
+"test.csv" - csv file that contains the testing data 
+
+"train.csv" - csv file that contains the training data 
+
+"dectree.pkl", "gradboost.pkl", "knn.pkl", "logreg.pkl", "svmclf.pkl" - pickle files that were generated based on the data processes at the "LoanPred.ipynb"
+
+"best_model.pkl" - pickle file that was selected among the ones generated from "LoanPred.ipynb" based on its prediction score, this file is the one used by "app.py" for the predictions
+
+"Dockerfile" - necessary for the configuration and usage docker
+
+"docker-compose.yml" - yaml file necessary for using docker 
+
+"requirements.txt" - file for necessary for setting requierements for docker image 
+
+-from "templates" folder:
+"about.html", "index.html", "main.html", "result.html" - html scripts that the app uses for navigating
+
+
+
+
+****** For installing python and necessary libraries 
+-To install python 3: 
+
+sudo apt-get install python3.9
+
+-To install the necessary libraries: 
+*****NOTE: If you want to re-run the data processing and model training you will need all of the libraries,
+otherwise, if you only want to run the app using the previously trained model,
+then you will only need: python3.9, numpy, pickle-mixin, and flask 
+
+sudo apt install python3-pip
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install sklearn
+pip install seaborn
+pip install pickle-mixin
+pip install flask
+
+****** For running the app
+
+-Download the contents from the "app" folder and the "templates" folder
+
+-You can runn the app using flask, or using docker, bellow you can find the steps for each of them
+
+-----Using flask:
+-Inside the app folder from the shell run:
+
+set FLASK_APP=app.py
+flask run
+
+-run localhost from the browser:
+http://localhost:5000/
+
+-to close the server, from the shell:
+Ctrl + C
+
+-----Using docker:
+-You must be logged in to your docker user
+-Inside the app folder from the shell run:
+
+docker-compose up
+docker run app_web
+
