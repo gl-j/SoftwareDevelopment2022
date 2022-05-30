@@ -3,8 +3,7 @@
 -from "app" folder
 "app.py" - the main python script
 
-"LoanPred.ipynb" - is a jupyter notebook containing the code that was used to process the data and 
-train and select the best model
+"LoanPred.ipynb" - is a jupyter notebook containing the code that was used to process the data and train and select the best model
 
 "Reverse encode.txt" - is a file containing a description of the encoding of the values that take each attribute from the dataset 
 
@@ -46,6 +45,8 @@ pip install sklearn
 pip install seaborn
 pip install pickle-mixin
 pip install flask
+
+
 
 ****** For running the app
 
