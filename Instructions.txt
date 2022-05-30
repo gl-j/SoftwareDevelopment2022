@@ -1,1 +1,14 @@
+-To install python 3: 
 
+sudo apt-get install python3.9
+
+-To intstall the necesssary libraries: 
+
+sudo apt install python3-pip
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install sklearn
+pip install seaborn
+pip install pickle-mixin
+pip install flask
